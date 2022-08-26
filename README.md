@@ -50,6 +50,26 @@ classDiagram
     Visit : webpage_id
     Visit : server_id
 ```
+The main logic is on lib/web_server_visit.rb
+With 3 methods for each rake task
 
+    import_webserver_file
+
+      This is where the Webpage, Server and Visit records are created
+
+    most_page_views
+
+      This is where we query by visits
+
+    most_unique_page_views
+
+      This is where we query by unique visits
+
+Tests are:
+
+    test/models/server_test.rb
+    test/models/visit_test.rb
+    test/models/webpage_test.rb
+    test/integration/web_server_visit_test.rb
 
 
